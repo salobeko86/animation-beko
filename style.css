@@ -1,0 +1,73 @@
+.relative {
+	max-width: 1300px;
+	width: 100%;
+	margin: 10px;
+	position: relative;
+}
+.image-visual img {
+	width: 100%;
+} 
+.my-winter-absolute {
+	position: absolute;
+	background: grey;
+	bottom: 50px;
+	right: 100px;
+	font-size: 50px;
+	color: white;
+	transition-property: all;
+	transition-delay: 0.3s;
+	transition-duration: 0.6s;
+	transition-timing-function: linear;
+}
+.my-winter-absolute:hover {
+	background-color: blue;
+	font-size: 80px
+	right: 50px;
+}
+.snow-bg img {
+	position: absolute;
+	max-width: 80px;
+	width: 100%;
+	top: 50px;
+	margin-left: 20px;
+	animation-name: move;
+	animation-duration: 5s;
+	animation-delay: 0.2s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+.snowflake-bg img {
+	position: absolute;
+	max-width: 80px;
+	width: 100%;
+	top: 50px;
+	margin-left: 200px;
+	animation-name: move;
+	animation-duration: 5s;
+	animation-delay: 0.2s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+.snowflake-block img {
+	position: absolute;
+	max-width: 80px;
+	width: 100%;
+	top: 50px;
+	margin-left: 400px;
+	animation-name: move;
+	animation-duration: 5s;
+	animation-delay: 0.2s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+
+}
+@keyframes move{
+	from {
+		background-color: white;
+		top: 50px;
+	}
+	to {
+		background-color: grey;
+		top: 700px;
+	}
+}
